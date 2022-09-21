@@ -1,0 +1,7 @@
+doctor,いしゃ
+office worker,かいしゃいん
+nurse,かんごし
+high school student,こうこうせい
+housewife,しゅふ
+graduate student,だいがくいんせい
+lawyer,べんごし

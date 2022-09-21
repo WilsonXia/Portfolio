@@ -1,0 +1,9 @@
+college,だいがく
+high school,こうこう
+student,がくせい
+college student,だいがくせい
+international student,りゅうがくせい
+teacher,せんせい
+...year student,～ねんせい
+first-year student,いちねんせい
+major,せんこう
