@@ -75,6 +75,8 @@ main h1 {
     width: 40vw;
     font-size: 60px;
     align-self: flex-end;
+
+    color: #003459;
 }
 
 .container {
@@ -103,14 +105,28 @@ main ul {
     align-self: center;
 }
 
+.boxList {
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
 main li {
-    min-height: 25rem;
     margin: 0.5rem 0;
 
     display: grid;
     justify-content: center;
 
     background-color: #007EA7;
+}
+
+.box {
+    margin: 8px;
+    width: 30%;
+}
+
+.projectBox {
+    min-height: 25rem;
 }
 
 .leftside {
