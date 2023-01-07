@@ -1,0 +1,35 @@
+main{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    background-color: #D5F8CB;
+}
+
+#canvas {
+    margin: 20px;
+}
+
+#controller{
+    height: 75px;
+}
+
+#controller *{
+    height: 100%;
+    font-size: 24px;
+    border-radius: 10px;
+    border-style: solid;
+    width: 8rem;
+}
+
+#controller input{
+    width: 20rem;
+}
+
+img{
+    height: 256px;
+    width: 256px;
+}
