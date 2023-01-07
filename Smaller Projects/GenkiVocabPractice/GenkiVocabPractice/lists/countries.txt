@@ -1,8 +1,0 @@
-Britain,いぎりす
-Australia,おおすとらりあ
-Korea,かんこく
-Canada,かなだ
-China,ちゅうごく
-India,いんど
-Egypt,えじぷと
-Philippines,ふりぴん
