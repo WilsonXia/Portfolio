@@ -170,6 +170,18 @@ img {
     margin: 2rem;
 }
 
+.attributesList {
+    display: flex;
+    flex-flow: row wrap;
+    align-self: flex-start;
+
+    width: 50%;
+}
+
+.attributesList li {
+    padding: 0.5rem;
+}
+
 footer {
     grid-area: footer;
     background-color: #eeeeee;
