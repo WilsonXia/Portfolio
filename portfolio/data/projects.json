@@ -1,0 +1,43 @@
+{
+    "projects":
+    [
+        {
+            "title" : "RogueOut",
+            "git" : "https://github.com/WilsonXia/RogueOut",
+            "description" : "A work-in-progress Roguelite version of the classic game of Breakout, created in Unity with C#. This personal project has been worked on for roughly 1 month, whenever I had free time to work on this.",
+            "images" : "images/RogueOut-Screenshot.png"
+        },
+        {
+            "title" : "Tower of Gun",
+            "git" : "https://github.com/WilsonXia/Tower-of-Gun",
+            "description" : "A work-in-progress 2D shoot'em up game, created in Unity with C#. I started developing this game in January 2023, but have stopped progress since around late March.",
+            "images" : "images/TowerOfGun-Screenshot.png"
+        },
+        {
+            "title" : "Treasure of The Ancients",
+            "git": "https://github.com/WilsonXia/Portfolio/tree/main/projects",
+            "href" : "https://igme-202-2221.github.io/project-2-WilsonXia/",
+            "description" : "A small Simulator-type game made in Unity and coded in C#. It is an academic project for my course in Interactive Media Development. All art assets are from OpenGameArt.com.",
+            "images" : "images/TOTAScreenshot.png"
+        },
+        {
+            "title" : "Dog Website",
+            "git": "https://github.com/WilsonXia/Portfolio/tree/main/projects",
+            "href" : "https://people.rit.edu/wx4477/235/project1/",
+            "description" : "A website made using HTML and CSS to feature a precious friend. It is an academic project from the course Intro to Game Web Dev.",
+            "images" : "images/dogWebsiteScreenshot.png"
+        },
+        {
+            "title" : "Word Guesser",
+            "git": "https://github.com/WilsonXia/Portfolio/tree/main/projects",
+            "href" : "https://people.rit.edu/wx4477/235/project3/",
+            "description" : "A small word game made utilizing Javascript, PixiJS, and APIS. It is an academic project from the course Intro to Game Web Dev.",
+            "images" : "images/wordGuesserScreenshot.png"
+        },
+        {
+            "title" : "Portfolio Site",
+            "git": "https://github.com/WilsonXia/Portfolio/tree/main/portfolio",
+            "description" : "Thanks for checking out my portfolio! The projects shown are stored in JSON files, and are loaded with Javascript Modules."
+        }
+    ]
+}

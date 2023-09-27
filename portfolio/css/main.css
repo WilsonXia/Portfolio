@@ -6,6 +6,7 @@ body {
     grid-template-areas: "header" "main" "footer";
 }
 
+/* Header Stuff */
 header {
     grid-area: header;
     height: 12vh;
@@ -49,6 +50,8 @@ header li {
     text-decoration: none;
     align-self: center;
 }
+
+/* Main content */
 
 main {
     grid-area: main;
@@ -125,6 +128,8 @@ main li {
     width: 30%;
 }
 
+/* Project Content */
+
 .projectBox {
     min-height: 25rem;
 }
@@ -170,7 +175,7 @@ img {
     margin: 2rem;
 }
 
-.attributesList {
+/* .attributesList {
     display: flex;
     flex-flow: row wrap;
     align-self: flex-start;
@@ -180,8 +185,8 @@ img {
 
 .attributesList li {
     padding: 0.5rem;
-}
-
+} */
+/* Footer Content */
 footer {
     grid-area: footer;
     background-color: #eeeeee;

@@ -1,0 +1,6 @@
+{
+    "skills" : ["Hard Working", "Diligent", "Creative", "Strong Communication Skills", "Positive"],
+    "languages" : ["C#", "C++", "HTML", "CSS", "JavaScript", "TypeScript", "Java"],
+    "softwares" : ["Krita","Maya", "Unity", "Visual Studio Code", "Git"],
+    "frameworks" : ["Angular", "Bulma"]
+}

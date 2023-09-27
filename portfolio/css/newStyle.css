@@ -1,0 +1,147 @@
+body{
+    height: 100%;
+    margin: 0;
+    background-color: #001829;
+    color: white;
+    font-family: 'Hanken Grotesk','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2{
+    margin: 0;
+    padding: 0.5rem 1rem;
+    font-size: 32px;
+}
+
+h1{
+    font-size: 42px;
+    text-align: center;
+    margin: 0;
+}
+
+strong, em {
+    color: #000C14;
+}
+
+/* HEADER NAV BAR*/
+header{
+    display: flex;
+    justify-content: center;
+    padding: 0 2rem;
+    background-color: #003459;
+    color: white;
+}
+
+/* nav ul{
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    float: left;
+    border-right: 3px solid #bbb;
+}
+
+nav li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px 3rem;
+    text-decoration: none;
+}
+
+nav li a:hover{
+    background-color: #001829;
+} */
+
+/* Content */
+main {
+    display: grid;
+    grid-template-rows: 65% 30%;
+    justify-content: space-between;
+    margin: 1rem 2rem 0;
+}
+
+/* Projects */
+#project-list{
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 2rem; 
+}
+
+#project-list li{
+    margin: 1rem 0;
+}
+
+#project{
+    color: white;
+    background-color: #00253D;
+    box-shadow: 10px 5px 5px #000C14;
+    font-size: 22px;
+    padding: 2rem;
+}
+
+#project a{
+    color: white;
+    font-size: 28px;
+}
+
+#project img{
+    width: 80%;
+    height: 80%;
+    justify-self: center;
+}
+
+/* Content - Me  */
+#body-me{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #7698b3;
+    height: 50%;
+    padding: 1rem 2rem;
+}
+
+#body-me img{
+    max-width: 90%;
+    min-height: 10%;
+}
+
+/* Contacts */
+footer {
+    bottom: 0;
+    display: flex;
+    flex-flow: column;
+    padding: 0 2rem;
+    background-color: #003459;
+    color: white;
+}
+
+footer h2{
+    padding: 1rem 1rem 0;
+}
+
+footer ul {
+    display: block;
+    list-style-type: none;
+    margin: 0 3rem;
+    padding: 0;
+}
+
+footer li {
+    display: block;
+}
+
+footer li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 0;
+}
+
+li img{
+    margin-right: 12px; 
+}
+
