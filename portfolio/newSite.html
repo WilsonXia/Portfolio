@@ -6,18 +6,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="src/main.js" type="module"></script>
-    <link rel="stylesheet" href="css/newStyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-        rel="stylesheet">
-    <title>Wilson's Portfolio</title>
+    href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="css/newStyle.css">
+    <title>Wilson Xia</title>
 </head>
 <body>
-    <header>
-        <h2>Wilson Xia</h2>
-    </header>
+    <!-- Navbar Start -->
+    <nav class="navbar has-background-dark p-2">
+        <div class="navbar-brand">
+            <a href="" class="navbar-item">
+                <h1 class="title is-3 has-text-light">Wilson Xia</h1>
+            </a>
+
+            <!-- Hamburger -->
+            <a role="button" class="navbar-burger" aria-expanded="false" data-target="navbar-main">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <!-- Menu -->
+        <div id="navbar-main" class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item has-text-light" href="index.html">Home</a>
+                <a class="navbar-item has-text-light" href="aboutMe.html">About Me</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- 
     <main>
         <section id="body-content">
             <div class="content-heading">
@@ -29,14 +52,6 @@
             <img src="images/picOfMe.jpg" alt="pic of me">
             <h1>Hi! I'm <strong>Wilson Xia</strong>, and I'm a student at <em>Rochester Institute of Technology</em>.</h1>
         </section>
-        <!-- <section id="body-skills">
-            <h1>Skills</h1>
-            <ul>
-                <li>Apple</li>
-                <li>Orange</li>
-                <li>Banana</li>
-            </ul>
-        </section> -->
     </main>
     <footer>
         <h2>Connect With Me</h2>
@@ -47,6 +62,6 @@
             <li><a href="https://github.com/WilsonXia/Portfolio" target="_blank">Github</a></li>
             <li><a href="https://www.linkedin.com/in/wilson-xia-3b905121b/" target="_blank"><img src="images/linkedin-logo.png" class="icon" alt="LinkedIn">LinkedIn</a></li>
         </ul>
-    </footer>
+    </footer> -->
 </body>
 </html>
