@@ -1,0 +1,32 @@
+body{
+    font-family: 'Hanken Grotesk','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Components */
+.page-break{
+    padding:5rem;
+    background-image: url("../images/page/pageDetail.png");
+    background-repeat: repeat-x;
+}
+
+/* Sizing */
+.carousel{
+    width: 80%;
+}
+
+/* Text and Color */
+.highlight{
+    color: #A1D977;
+}
+
+.has-bg-primary{
+    background-color: #063D01;
+}
+
+.has-bg-light{
+    background-color: #A1D977;
+}
+
+.has-bg-dark{
+    background-color: #171F10;
+}
