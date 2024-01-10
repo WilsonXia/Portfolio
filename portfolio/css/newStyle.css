@@ -3,6 +3,10 @@ body{
 }
 
 /* Components */
+.navbar{
+    border-bottom: 2px solid #348A2B;
+}
+
 .page-break{
     padding:5rem;
     background-image: url("../images/page/pageDetail.png");
@@ -10,7 +14,7 @@ body{
 }
 
 .banner-bg{
-    height: 10vh;
+    min-height: 10vh;
     background-size: contain;
     background-image: url("../images/page/pageDetail.png");
     background-repeat: repeat-x;
@@ -39,13 +43,39 @@ body{
     margin: 0rem 6rem;
 }
 
+.image-cover{ 
+    object-fit: cover;
+}
+
+.image-bottom{
+    background-position: bottom;
+}
+
+/* Anchors */
+.navbar a:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+.navbar-start a{
+    border-left-width: 3px;
+    border-left: 2px solid #348A2B;
+}
+
 /* Text and Color */
 .highlight{
     color: #A1D977;
 }
 
-.banner-title{
+.dark-color{
+    color: #051703;
+}
+
+.primary-color{
     color: #348A2B;
+}
+
+.has-bg-alpha{
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255), rgba(255,255,255,0));
+    background-blend-mode: lighten;
 }
 
 .has-bg-primary{
