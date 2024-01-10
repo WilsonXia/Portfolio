@@ -25,7 +25,7 @@
     <!-- Navbar Start -->
     <nav class="navbar box p-2">
         <div class="navbar-brand">
-            <a href="" class="navbar-item">
+            <a href="newSite.html" class="navbar-item">
                 <h1 class="title is-3">Wilson Xia</h1>
             </a>
 
@@ -39,8 +39,8 @@
         <!-- Menu -->
         <div id="navbar-main" class="navbar-menu">
             <div class="navbar-end mr-3">
-                <a class="navbar-item" href="index.html">Home</a>
-                <a class="navbar-item" href="aboutMe.html">About Me</a>
+                <a class="navbar-item" href="projects.html">Projects</a>
+                <a class="navbar-item" href="aboutMe.html">Resume</a>
             </div>
         </div>
     </nav>
@@ -51,11 +51,11 @@
         <div class="column is-one-third px-6 py-0">
             <img class="image box is-2by1 p-0" src="images/me-in-front-of-tree.jpg" alt="picture of me">
         </div>
-        <div class="column columns is-two-thirds is-flex-direction-column p-0">
+        <div class="column columns is-two-thirds is-flex-direction-column">
             <div class="column"></div>
             <div class="column"></div>
-            <div class="column">
-                <h1 class="title is-1 highlight">Wilson Xia</h2>
+            <div class="column is-flex is-flex-direction-column is-justify-content-center">
+                <h1 class="title content is-1 highlight">Wilson Xia</h2>
                 <h2 class="subtitle">Game Design & Development Student at RIT</h2>
             </div>
             <div class="column"></div>
@@ -66,48 +66,50 @@
     <div class="page-break"></div>
 
     <!-- Featured Projects -->
-    <section class="hero has-bg-primary">
-        <div class="hero-body">
+    <section class="section has-bg-primary">
+        <div class="container">
             <h2 class="title has-text-light">Featured Projects</h2>
             <!-- Carousel -->
-            <div class="swiper mySwiper carousel">
-                <div class="swiper-wrapper slides" id="wrapper">
-                    <div class="swiper-slide">
-                        <div class="card">
-                            <div class="card-image">
-                                <figure class="image is-2by1">
-                                    <img src="images/screenshots/RogueOut-Screenshot.png" alt="RogueOut">
-                                </figure>
+            <div class="container">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper slides" id="wrapper">
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image is-2by1">
+                                        <img src="images/screenshots/RogueOut-Screenshot.png" alt="RogueOut">
+                                    </figure>
+                                    <div class="card-content">
+                                        <h2 class="title">RogueOut</h2>
+                                        <h2 class="subtitle">Game - Personal</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-image">
+                                    <div class="image is-2by1">
+                                        <img src="images/screenshots/TowerOfGun-Screenshot.png" alt="TowerOfGun">
+                                    </div>
+                                </div>
                                 <div class="card-content">
-                                    <h2 class="title">RogueOut</h2>
+                                    <h2 class="title">Tower Of Gun</h2>
                                     <h2 class="subtitle">Game - Personal</h2>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="card">
-                            <div class="card-image">
-                                <div class="image is-2by1">
-                                    <img src="images/screenshots/TowerOfGun-Screenshot.png" alt="TowerOfGun">
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                <h2 class="title">Tower Of Gun</h2>
-                                <h2 class="subtitle">Game - Personal</h2>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="section">
+    <footer class="section has-bg-light has-text-dark">
         <h2 class="title">Connect With Me</h2>
         <ul class="list content">
             <li class="list-item"><a href="mailto:216152819xw@gmail.com">
