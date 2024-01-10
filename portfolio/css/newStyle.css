@@ -53,11 +53,26 @@ body{
 
 /* Anchors */
 .navbar a:hover{
+    color: #051703;
     background-color: rgba(0,0,0,0.1);
 }
+.navbar a:active{
+    color: white;
+    background-color: #348A2B;
+}
+
 .navbar-start a{
     border-left-width: 3px;
     border-left: 2px solid #348A2B;
+}
+
+.project-card a:hover{
+    background-color: #A1D977;
+}
+
+.project-card a:active{
+    color: white;
+    background-color: #063D01;
 }
 
 /* Text and Color */
