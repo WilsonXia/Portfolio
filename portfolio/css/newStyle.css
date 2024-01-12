@@ -1,46 +1,15 @@
+@import "animation.css";
+@import "components.css";
+@import "colors.css";
+
 body{
     font-family: 'Hanken Grotesk','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-/* Components */
-.navbar{
-    border-bottom: 2px solid #348A2B;
-}
-
-.page-break{
-    padding:5rem;
-    background-image: url("../images/page/pageDetail.png");
-    background-repeat: repeat-x;
-}
-
-.banner-bg{
-    min-height: 10vh;
-    background-size: contain;
-    background-image: url("../images/page/pageDetail.png");
-    background-repeat: repeat-x;
-}
-
-.card-holder{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    border-radius: 15px;
-}
-
-.project-card{
-    margin: 2rem;
-    background-color: #348A2B;
-    box-shadow: 0.5rem 0.5rem rgba(0,0,0,0.5);
-    overflow: hidden;
-}
-
-.project-card img{
-    object-fit: cover;
+    color: #171F10;
 }
 
 /* Sizing */
 .carousel{
-    margin: 0rem 6rem;
+    max-width: 720px;
 }
 
 .image-cover{ 
@@ -51,64 +20,6 @@ body{
     background-position: bottom;
 }
 
-/* Anchors */
-.navbar a:hover{
-    color: #051703;
-    background-color: rgba(0,0,0,0.1);
-}
-.navbar a:active{
-    color: white;
-    background-color: #348A2B;
-}
-
-.navbar-start a{
-    border-left-width: 3px;
-    border-left: 2px solid #348A2B;
-}
-
-.project-card a:hover{
-    background-color: #A1D977;
-}
-
-.project-card a:active{
-    color: white;
-    background-color: #063D01;
-}
-
-/* Text and Color */
-.highlight{
-    color: #A1D977;
-}
-
-.dark-color{
-    color: #051703;
-}
-
-.primary-color{
-    color: #348A2B;
-}
-
-.has-bg-alpha{
-    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255), rgba(255,255,255,0));
-    background-blend-mode: lighten;
-}
-
-.has-bg-primary{
-    background-color: #063D01;
-}
-
-.has-bg-light{
-    background-color: #A1D977;
-}
-
-.has-bg-normal{
-    background-color: #348A2B;
-}
-
-.has-bg-dark{
-    background-color: #171F10;
-}
-
-.has-bg-darker{
-    background-color: #051703;
+#pic-of-me{
+    width: 450px;
 }

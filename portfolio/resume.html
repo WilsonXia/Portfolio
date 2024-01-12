@@ -10,7 +10,7 @@
     href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
     rel="stylesheet">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Bulma -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <!-- CSS -->
@@ -21,130 +21,133 @@
 </head>
 <body>
     <!-- Navbar Start -->
-    <nav class="navbar p-2">
-      <div class="navbar-brand">
-          <a href="newSite.html" class="navbar-item">
-              <h1 class="title is-3 primary-color">Wilson Xia</h1>
-          </a>
-
-          <!-- Burger -->
-          <a role="button" class="navbar-burger" aria-expanded="false" data-target="navbar-main">
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-          </a>
-      </div>
-      <!-- Menu -->
-      <div id="navbar-main" class="navbar-menu">
-          <div class="navbar-start mr-3">
-              <a class="navbar-item primary-color" href="projects.html">Projects</a>
-              <a class="navbar-item has-text-light has-bg-primary" href="resume.html">Resume</a>
-          </div>
-      </div>
+    <nav class="navbar" id="navbar">
+        <div class="navbar-brand p-2 pl-3">
+            <a href="index.html" class="navbar-item" id="home-button">
+                <h1 class="title is-3 primary-color">Wilson Xia</h1>
+            </a>
+  
+            <!-- Burger -->
+            <a role="button" class="navbar-burger" aria-expanded="false" data-target="navbar-main">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <!-- Menu -->
+        <div id="navbar-main" class="navbar-menu">
+            <div class="navbar-end mr-3">
+                <a class="navbar-item primary-color" href="projects.html">Projects</a>
+                <a class="navbar-item current" href="resume.html">Resume</a>
+            </div>
+        </div>
     </nav>
     <!-- Navbar End -->
     
     <!-- Banner -->
     <div class="banner-bg">
     </div>
+    <!-- Banner -->
+    <div class="has-bg-header-content">
+        <div class="banner-bg">
+        </div>
+    </div>
 
     <!-- Content -->
-    <section class="section has-bg-primary">
-        <div class="container mb-3">
-            <h1 class="title is-1 primary-color">Projects</h1>
-            <section class="section box has-bg-light">
-                <h1 class="title dark-color">Education</h1>
-                <div class="box content">
-                    <h2 class="subtitle mb-0">Rochester Institute of Technology, Rochester NY</h2>
-                    <h3 class="mt-0">Expected in May 2025</h2>
-                    <h4 class="mb-0">Bachelor of Science in Game Design & Development</h2>
-                    <h4 class="mt-0">Minor in Modern Language: Japanese</h2>
-                    <ul>
-                        <li><p>GPA: 3.97</p></li>
-                        <li><p>Dean's List: Fall 2021, Spring 2022, Fall 2022, Spring 2023</p></li>				         		
-                    </ul>
-                    <h4>Relevant Courses</h4>
-                    <ul>
-                        <li><p>Game Design & Development II</p></li>
-                        <li><p>Interactive Media Development</p></li>
-                        <li><p>Rich Media Web Application Development I</p></li>
-                        <li><p>Data Structures and Algorithms II</p></li>
-                    </ul>
-                </div>
-            </section>
+    <div class="has-bg-gradient">
+        <section class="section">
+            <div class="container mb-3">
+                <h1 class="title is-1 primary-color">Resume</h1>
+                <section class="section box has-bg-light">
+                    <h1 class="title dark-color">Education</h1>
+                    <div class="box content">
+                        <h2 class="subtitle mb-0">Rochester Institute of Technology, Rochester NY</h2>
+                        <h3 class="mt-0">Expected in May 2025</h2>
+                        <h4 class="mb-0">Bachelor of Science in Game Design & Development</h2>
+                        <h4 class="mt-0">Minor in Modern Language: Japanese</h2>
+                        <ul>
+                            <li><p>GPA: 3.97</p></li>
+                            <li><p>Dean's List: Fall 2021, Spring 2022, Fall 2022, Spring 2023</p></li>				         		
+                        </ul>
+                        <h4>Relevant Courses</h4>
+                        <ul>
+                            <li><p>Game Design & Development II</p></li>
+                            <li><p>Interactive Media Development</p></li>
+                            <li><p>Rich Media Web Application Development I</p></li>
+                            <li><p>Data Structures and Algorithms II</p></li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section class="section box has-bg-light">
+                    <h1 class="title dark-color">Software</h1>
+                    <div class="box content">
+                        <ul>
+                            <li><p>Unity</p></li>			         		
+                            <li><p>Krita</p></li>			         		
+                            <li><p>Maya</p></li>			         		
+                            <li><p>Visual Studio Code</p></li>			         		
+                            <li><p>Git</p></li>			         		
+                        </ul>
+                    </div>
+                </section>
             
-            <section class="section box has-bg-light">
-                <h1 class="title dark-color">Software</h1>
-                <div class="box content">
-                    <ul>
-                        <li><p>Unity</p></li>			         		
-                        <li><p>Krita</p></li>			         		
-                        <li><p>Maya</p></li>			         		
-                        <li><p>Visual Studio Code</p></li>			         		
-                        <li><p>Git</p></li>			         		
-                    </ul>
-                </div>
-            </section>
-        
-            <section class="section box has-bg-light">
-                <h1 class="title dark-color">Programming Languages</h1>
-                <div class="box content">
-                    <ul>
-                        <li><p>C#</p></li>			         		
-                        <li><p>C++</p></li>			         		
-                        <li><p>HTML</p></li>			         		
-                        <li><p>CSS</p></li>			         		
-                        <li><p>JavaScript</p></li>			         		
-                        <li><p>TypeScript</p></li>			         		
-                        <li><p>Java</p></li>			         		
-                    </ul>
-                </div>
-                <h1 class="title dark-color">Frameworks</h1>
-                <div class="box content">
-                    <ul>
-                        <li><p>Angular</p></li>			         		
-                        <li><p>Bulma</p></li>		         		
-                    </ul>
-                </div>
-            </section>
-
-            <section class="section box has-bg-light">
-                <h1 class="title dark-color">Leadership Experience</h1>
-                <div class="box content">
-                    <h2 class="subtitle mb-0">RIT's Asian Culture Society</h2>
-                    <h3 class="mt-0">Jan 2022 - May 2023</h2>
-                    <h4 class="mb-0">Treasurer</h2>
-                    <h4 class="mt-0">Rochester, New York</h2>
-                    <ul>
-                        <li><p>Manage club funding through the utilization of Google Sheets to keep track of budgeting</p></li>
-                        <li><p>Propose a variety of creative ideas towards event contribution and brainstorming</p></li>				         		
-                        <li><p>Act as the Head of Fundraising to lead committee members in planning and executing fundraisers</p></li>				         		
-                    </ul>
-                </div>
-            </section>
+                <section class="section box has-bg-light">
+                    <h1 class="title dark-color">Programming Languages</h1>
+                    <div class="box content">
+                        <ul>
+                            <li><p>C#</p></li>			         		
+                            <li><p>C++</p></li>			         		
+                            <li><p>HTML</p></li>			         		
+                            <li><p>CSS</p></li>			         		
+                            <li><p>JavaScript</p></li>			         		
+                            <li><p>TypeScript</p></li>			         		
+                            <li><p>Java</p></li>			         		
+                        </ul>
+                    </div>
+                    <h1 class="title dark-color">Frameworks</h1>
+                    <div class="box content">
+                        <ul>
+                            <li><p>Angular</p></li>			         		
+                            <li><p>Bulma</p></li>		         		
+                        </ul>
+                    </div>
+                </section>
+    
+                <section class="section box has-bg-light">
+                    <h1 class="title dark-color">Leadership Experience</h1>
+                    <div class="box content">
+                        <h2 class="subtitle mb-0">RIT's Asian Culture Society</h2>
+                        <h3 class="mt-0">Jan 2022 - May 2023</h2>
+                        <h4 class="mb-0">Treasurer</h2>
+                        <h4 class="mt-0">Rochester, New York</h2>
+                        <ul>
+                            <li><p>Manage club funding through the utilization of Google Sheets to keep track of budgeting</p></li>
+                            <li><p>Propose a variety of creative ideas towards event contribution and brainstorming</p></li>				         		
+                            <li><p>Act as the Head of Fundraising to lead committee members in planning and executing fundraisers</p></li>				         		
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <div class="has-bg-content-footer">
+            <div class="banner-bg">
+            </div>
         </div>
-    </section>
+    </div>
     
     <!-- Footer -->
-    <!-- Banner -->
-    <div class="banner-bg">
-    </div>
     <footer class="section has-bg-light has-text-dark">
-        <h2 class="title">Connect With Me</h2>
-        <ul class="list content">
-            <li class="list-item"><a href="mailto:216152819xw@gmail.com">
-                <span class="icon"><i class="fa fa-envelope"></i></span>
-                216152819xw@gmail.com</a>
-            </li>
-            <li class="list-item"><a href="tel:+16468359604">
-                <span class="icon"><i class="fa fa-phone"></i></span>
-                1-646-835-9604</a></li>
-            <li class="list-item"><a href="https://github.com/WilsonXia/Portfolio" target="_blank">
-                <span class="icon"><i class="fa fa-github"></i></span>
-                Github</a></li>
-            <li class="list-item"><a href="https://www.linkedin.com/in/wilson-xia-3b905121b/" target="_blank">
-                <span class="icon"><i class="fa fa-linkedin"></i></i></span>
-                LinkedIn</a></li>
+        <h2 class="title dark-color">Connect With Me</h2>
+        <ul class="list contact-list">
+            <li class="list-item"><a class="box contact" href="mailto:216152819xw@gmail.com">
+                <span class="icon"><i class="fa-solid fa-envelope fa-2xl"></i></span></a></li>
+            <li class="list-item"><a class="box contact" href="tel:+16468359604">
+                <span class="icon"><i class="fa-solid fa-phone fa-2xl"></i></i></span></a></li>
+            <li class="list-item"><a class="box contact" href="https://github.com/WilsonXia/Portfolio" target="_blank">
+                <span class="icon"><i class="fa-brands fa-github fa-2xl"></i></span></a></li>
+            <li class="list-item"><a class="box contact" href="https://www.linkedin.com/in/wilson-xia-3b905121b/" target="_blank">
+                <span class="icon"><i class="fa-brands fa-linkedin fa-2xl"></i></i></i></span></a></li>
         </ul>
     </footer>
 </body>
