@@ -49,6 +49,34 @@ const projectsChanged = (snapshot) => {
     document.querySelector("#card-holder").innerHTML = html;
 }
 
+const featuredChanged = (snapshot) => {
+  let html =  "";
+  snapshot.forEach(project => {
+      const childData = project.val(); // obtains that reference's value
+      // Build a Card if the project is featured
+      if(childData.featured){
+        html += `
+        <div class="swiper-slide">
+        <div class="card">
+            <div class="card-image">
+                <figure class="image is-2by1">
+                    <img src="${childData.coverImage}" alt="${childData.title}">
+                </figure>
+                <div class="card-content is-flex is-flex-wrap-wrap is-justify-content-space-between">
+                    <div>
+                        <h2 class="title highlight">${childData.title}</h2>
+                        <h2 class="subtitle dark-color">${childData.flavor}</h2>
+                    </div>
+                    <a class="button" href="${childData.pageURL}">View Project</a>
+                </div>
+            </div>
+        </div>
+        </div>`;
+      }
+  })
+  document.querySelector("#wrapper").innerHTML = html;
+}
+
 const writeProjectData = ({title, flavor, coverImage, pageURL}) => {
     const db = getDatabase();
     set(ref(db, 'projects/' + title), {
@@ -61,6 +89,10 @@ const writeProjectData = ({title, flavor, coverImage, pageURL}) => {
 
 const setUpProjectsPage = () => {
     onValue(projectsRef,projectsChanged);
+}
+
+const setUpHomePage = () => {
+  onValue(projectsRef,featuredChanged);
 }
 
 const setUpBuildPage = () => {
@@ -86,7 +118,7 @@ const setUpBuildPage = () => {
     setUpProjectsPage();
 }
 
-export {setUpBuildPage, setUpProjectsPage}
+export {setUpBuildPage, setUpProjectsPage, setUpHomePage}
 
   
 // const scoresChanged = (snapshot) => {
