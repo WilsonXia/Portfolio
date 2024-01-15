@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Bulma -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/newStyle.css">
+    <!-- Script -->
+    <script src="src/buildpage.js" type="module"></script>
+    <title>Wilson Xia</title>
+</head>
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar" id="navbar">
+      <div class="navbar-brand p-2 pl-3">
+          <a href="index.html" class="navbar-item" id="home-button">
+              <h1 class="title is-3 primary-color">Wilson Xia</h1>
+          </a>
+
+          <!-- Burger -->
+          <a role="button" class="navbar-burger" aria-expanded="false" data-target="navbar-main">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+          </a>
+      </div>
+      <!-- Menu -->
+      <div id="navbar-main" class="navbar-menu">
+          <div class="navbar-end mr-3">
+              <a class="navbar-item current" href="projects.html">Projects</a>
+              <a class="navbar-item primary-color" href="resume.html">Resume</a>
+          </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Banner -->
+    <div class="banner-bg">
+    </div>
+    <!-- Banner -->
+    <div class="has-bg-header-content">
+      <div class="banner-bg">
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="has-bg-gradient">
+      <section class="section">
+        <div class="container">
+        <!-- Title -->
+        <h1 class="title is-1 primary-color">Project Builder</h1>
+        
+        <form>
+            <div class="card project-card">
+                <div class="card-content">
+                    <ul class="list columns">
+                        <li class="list-item column">
+                            <label for="input-title" class="subtitle dark-color">Title</label>
+                            <input type="text" class="input" name="title" id="input-title">
+                            <label for="input-flavor" class="subtitle dark-color">Flavor Text</label>
+                            <input type="text" class="input" name="flavor" id="input-flavor">
+                        </li>
+                        <li class="list-item column">
+                            <label for="input-pageURL" class="subtitle dark-color">Page URL</label>
+                            <input type="text" class="input" name="pageURL" id="input-pageURL">
+                            <div class="is-flex is-flex-direction-column">
+                                <label for="input-coverImage" class="subtitle dark-color m-0">Cover Image</label>
+                                <div class="box">
+                                    <input type="file" accept="image/png, image/jpeg" name="coverImage" id="input-coverImage"/>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="button" id="submit-btn">Submit</button>
+                </div>
+            </div>
+        </form>
+        <!-- Card Holder -->
+        <div id="card-holder" class="container has-bg-dark scale-in-center">
+        </div>
+        <!-- end of Card holder -->
+        </div>
+      </section>
+      <div class="has-bg-content-footer">
+        <div class="banner-bg">
+        </div>
+      </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="section has-bg-light has-text-dark">
+    </footer>
+</body>
+</html>
