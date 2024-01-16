@@ -25,11 +25,16 @@ const projectsChanged = (snapshot) => {
         const childData = project.val(); // obtains that reference's value
         // Build a Card
         let buttonHTML = "";
+        let githubHTML = "";
         if(childData.pageURL){
-            buttonHTML = `<div class="container pb-2 is-flex is-justify-content-center">
-            <a class="button" href="${childData.pageURL}">View Project</a>
-          </div>`;
+            buttonHTML = `
+            <a class="button" href="${childData.pageURL}">View Project</a>`;
         }
+        if(childData.gitHubURL){
+          githubHTML = `<a class="button" href="https://github.com/WilsonXia/Portfolio" target="_blank">
+          <span class="icon"><i class="fa-brands fa-github fa-2xl"></i></span></a>`;
+        }
+        
         html += `
         <div class="grow">
         <div class="card project-card slide-in delay-1">
@@ -39,10 +44,13 @@ const projectsChanged = (snapshot) => {
             </figure>
           </div>
           <div class="card-content">
-            <p class="title has-text-centered dark-color">${childData.title}</p>
-            <p class="subtitle has-text-centered dark-color">${childData.flavor}.</p>
+            <h2 class="title has-text-centered dark-color">${childData.title}</h2>
+            <h2 class="subtitle has-text-centered dark-color">${childData.flavor}</h2>
           </div>
+          <div class="container pb-2 is-flex is-justify-content-space-evenly">
           ${buttonHTML}
+          ${githubHTML}
+          </div>
         </div>
         </div>`;
     })
@@ -55,6 +63,16 @@ const featuredChanged = (snapshot) => {
       const childData = project.val(); // obtains that reference's value
       // Build a Card if the project is featured
       if(childData.featured){
+        let buttonHTML = "";
+        let gitHubHTML = "";
+        if(childData.pageURL){
+          buttonHTML = `
+          <a class="button" href="${childData.pageURL}">View Project</a>`;
+        }
+        if(childData.gitHubURL){
+          gitHubHTML = `<a class="box" href="https://github.com/WilsonXia/Portfolio" target="_blank">
+          <span class="icon"><i class="fa-brands fa-github fa-2xl"></i></span></a>`;
+        }
         html += `
         <div class="swiper-slide">
         <div class="card">
@@ -67,7 +85,8 @@ const featuredChanged = (snapshot) => {
                         <h2 class="title highlight">${childData.title}</h2>
                         <h2 class="subtitle dark-color">${childData.flavor}</h2>
                     </div>
-                    <a class="button" href="${childData.pageURL}">View Project</a>
+                    ${buttonHTML}
+                    ${gitHubHTML}
                 </div>
             </div>
         </div>
@@ -112,6 +131,7 @@ const setUpBuildPage = () => {
             flavor: document.querySelector("#input-flavor").value,
             coverImage: `images/screenshots/${document.querySelector("#input-coverImage").value.replace(`C:\\fakepath\\`, ``)}`,
             pageURL: document.querySelector("#input-pageURL").value,
+            gitHubURL: document.querySelector("#input-gitHubURL").value
         });
     };
 

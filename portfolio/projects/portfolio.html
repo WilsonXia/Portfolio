@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Bulma -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/newStyle.css">
+    <!-- Script -->
+    <script src="../src/main.js" type="module"></script>
+    <title>Wilson Xia</title>
+</head>
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-brand p-2 pl-3">
+            <a href="../index.html" class="navbar-item" id="home-button">
+                <h1 class="title is-3 primary-color">Wilson Xia</h1>
+            </a>
+  
+            <!-- Burger -->
+            <a id="burger" class="navbar-burger">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <!-- Menu -->
+        <div id="navbar-main" class="navbar-menu is-active">
+            <div class="navbar-end mr-3">
+                <a class="navbar-item primary-color" href="../projects.html">Projects</a>
+                <a class="navbar-item primary-color" href="../resume.html">Resume</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+    
+    <!-- Banner -->
+    <div class="banner-bg">
+    </div>
+    <!-- Banner -->
+    <div class="has-bg-header-content">
+        <div class="banner-bg">
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="has-bg-gradient">
+        <section class="section">
+            <div class="container mb-3">
+                <h1 class="title is-1 primary-color">Portfolio Page</h1>
+                <section class="section box has-bg-light">
+                    <h1 class="title dark-color">Design</h1>
+
+                    <div class="box content">
+                        <div class="columns">
+                            <div class="column">
+                                <p class="content">
+                                    This website is reformed and refactored from my last portfolio page from 2022,
+                                    and utilizes a lot more code and structure. I used HTML, CSS, JavaScript, the Bulma Framework, FireBase,
+                                    and a lot of other resources to build this site. This was a HUGE improvement from my last portfolio page,
+                                    which makes me proud of this version.
+                                </p>
+                                <p class="content">
+                                    Some of these resources include: 
+                                    <ul>
+                                        <li>Animista, which helped me create CSS animations</li>
+                                        <li>Swiper, the basis for the unlimited scroll carousel on the home page</li>
+                                        <li>Font Awesome, where I got my icons from</li>
+                                        <li>And tons of Google searches!</li>
+                                    </ul>
+                                </p>
+                            </div>
+                            <div class="column">
+                                <figure id="oldSitePic" class="image is-2by1">
+                                    <img src="../images/screenshots/oldSite-1.png" alt="old site">
+                                </figure>
+                                <label for="oldSitePic">Screenshot of old site</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box content">
+                        <div class="columns">
+                            <div class="column">
+                                <p class="content">
+                                    I started off by designing the pages of my this site on Krita, a free drawing software on the PC.
+                                    I mainly focused on the coloring of the page, and utilized Coolers to help create a palette I liked.
+                                </p>
+                            </div>
+                            <div class="column"></div>
+                        </div>
+                        <p class="content">
+                            Here are some images of the prototypes I made:
+                            <ul class="columns">
+                                <li class="column"><figure class="image is-3by4 image-cover"><img src="../images/page/Website Template.png" alt="Home Page"></figure></li>
+                                <li class="column"><figure class="image is-3by4 image-cover"><img src="../images/page/Projects Page.png" alt="Projects Page"></figure></li>
+                                <li class="column"><figure class="image is-3by4 image-cover"><img src="../images/page/Individual Project Page.png" alt="Individual Project Page"></figure></li>
+                                <li class="column"><figure class="image is-3by4 image-cover"><img src="../images/page/Resume Page.png" alt="Resume Page"></figure></li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div class="box content">
+                        <div class="columns">
+                            <div class="column">
+                                <p class="content">
+                                    I struggled a lot on structuring, and styling the website. There were plenty of times where
+                                    I wanted to use Bulma for a majority of the project, but realized that in order for the website
+                                    to style the way I wanted it to, I would need to use my own personal css.
+                                </p>
+                                <p class="content">
+                                    Sizing each component and box was tricky, for example, the project cards on the project's page.
+                                    They wouldn't maintain the same size as each other unless you predetermined the width and height of
+                                    each box, and since I wanted to make the website more responsive, it was tricky to balance this goal. 
+                                </p>
+                            </div>
+                            <div class="column is-2">
+                            </div>
+                            <div class="column">
+                                <p class="content">
+                                    Another tricky part of this project was designing how I would utilize Firebase.
+                                    It was really easy for me to imagine how I would use the database, but actually producing
+                                    this feature was a lot harder, as I didn't have a plan to go about making a site to take care of
+                                    how I would manage the projects to add in the database. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+    
+                <section class="section box has-bg-light">
+                    <h1 class="title dark-color">Images</h1>
+                    <div class="box">
+                        <figure class="image is-2by1">
+                            <img src="../images/screenshots/portfolioScreenshot.png" alt="screenshot">
+                        </figure>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <div class="has-bg-content-footer">
+            <div class="banner-bg">
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="section has-bg-light has-text-dark">
+        <h2 class="title dark-color">Connect With Me</h2>
+        <ul class="list contact-list">
+            <li class="list-item"><a class="box contact" href="mailto:216152819xw@gmail.com">
+                <span class="icon"><i class="fa-solid fa-envelope fa-2xl"></i></span></a></li>
+            <li class="list-item"><a class="box contact" href="tel:+16468359604">
+                <span class="icon"><i class="fa-solid fa-phone fa-2xl"></i></i></span></a></li>
+            <li class="list-item"><a class="box contact" href="https://github.com/WilsonXia/Portfolio" target="_blank">
+                <span class="icon"><i class="fa-brands fa-github fa-2xl"></i></span></a></li>
+            <li class="list-item"><a class="box contact" href="https://www.linkedin.com/in/wilson-xia-3b905121b/" target="_blank">
+                <span class="icon"><i class="fa-brands fa-linkedin fa-2xl"></i></i></i></span></a></li>
+        </ul>
+    </footer>
+</body>
+</html>
